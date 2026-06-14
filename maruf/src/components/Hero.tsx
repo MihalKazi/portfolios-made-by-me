@@ -2,11 +2,12 @@
 "use client"; 
 
 import Image from 'next/image';
-import { cvData } from '@/data/cv';
+import { useCvData } from '@/context/CvDataContext';
 import { motion, type Variants } from 'framer-motion';
 import Typewriter from './Typewriter'; // Import our new component
 
 export default function Hero() {
+  const cvData = useCvData();
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {

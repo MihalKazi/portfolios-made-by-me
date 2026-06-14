@@ -1,10 +1,11 @@
 // src/components/Skills.tsx
 "use client";
 
-import { cvData } from '@/data/cv';
+import { useCvData } from '@/context/CvDataContext';
 import { motion } from 'framer-motion';
 
 export default function Skills() {
+  const cvData = useCvData();
   return (
     <section className="py-24 bg-[#FDFBF7] border-t border-stone-200">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full">

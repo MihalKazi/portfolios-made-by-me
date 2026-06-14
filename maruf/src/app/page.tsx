@@ -6,9 +6,13 @@ import Research from '@/components/Research';
 import Highlights from '@/components/Highlights';
 import Skills from '@/components/Skills';
 import Footer from '@/components/Footer';
+import { CvDataProvider } from '@/context/CvDataContext';
+import { getCvData } from '@/lib/getData';
 
-export default function Home() {
+export default async function Home() {
+  const data = await getCvData();
   return (
+    <CvDataProvider data={data}>
     <main className="min-h-screen bg-[#FDFBF7] selection:bg-[#C84B31]/20 selection:text-[#1E3A2F] relative">
       {/* Navbar stays fixed on top */}
       <Navbar />
@@ -27,5 +31,6 @@ export default function Home() {
         <Footer />
       </div>
     </main>
+    </CvDataProvider>
   );
 }

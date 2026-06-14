@@ -20,7 +20,7 @@ export const cvData = {
       role: "Program & Strategy Lead",
       date: "Dec 2024 to Present",
       location: "Dhaka, Bangladesh",
-      image: "/images/experience/activate.jpg", // Added image path
+      images: ["/images/experience/activate.jpg"],
       details: [
         "Leading a diverse team of young digital experts dedicated to advancing digital rights, privacy, surveillance, and censorship.",
         "Advocating for internet freedom and crafting people-first policies for the governance of digital spaces.",
@@ -32,7 +32,7 @@ export const cvData = {
       role: "Research Associate",
       date: "Jul 2023 to Dec 2024",
       location: "Dhaka, Bangladesh",
-      image: "/images/experience/cqr.jpg", // Added image path
+      images: ["/images/experience/cqr.jpg"],
       details: [
         "Led and coordinated a dynamic team of Student Ambassadors, orchestrating training sessions and workshops.",
         "Supervised quantitative and qualitative data from over 15 districts, including the Chittagong Hill Tracts.",
@@ -46,7 +46,7 @@ export const cvData = {
       role: "Fact Checker",
       date: "May 2022 to Dec 2022",
       location: "Paris (Remote)",
-      image: "/images/experience/factstory.jpg", // Added image path
+      images: ["/images/experience/factstory.jpg"],
       details: [
         "Collaborated with an international team of freelance journalists dedicated to its media research mission.",
         "Fostered communication with the supervisor from France."
@@ -57,7 +57,7 @@ export const cvData = {
       role: "Communication Officer",
       date: "Sep 2021 to Apr 2022",
       location: "Dhaka, Bangladesh",
-      image: "/images/experience/cirhd.jpg", // Added image path
+      images: ["/images/experience/cirhd.jpg"],
       details: [
         "Maintained communication with stakeholders and accompanied the CEO to both indoor and outdoor meetings.",
         "Drafted and analyzed documents, reports, and literature reviews. Created illustrated graphics for web and print."
@@ -68,7 +68,7 @@ export const cvData = {
       role: "Staff Writer",
       date: "Jan 2018 to Dec 2018",
       location: "Dhaka, Bangladesh",
-      image: "/images/experience/joban.jpg", // Added image path
+      images: ["/images/experience/joban.jpg"],
       details: [
         "Authored feature content at the specialized news portal Joban.com.",
         "Translated features from various foreign portals and transcribed interviews."
@@ -81,7 +81,7 @@ export const cvData = {
       title: "Strengthening resilience of host communities in Cox's Bazar",
       date: "Oct - Dec 2024",
       location: "Cox's Bazar",
-      image: "/images/research/save-children.jpg", // Added image path
+      images: ["/images/research/save-children.jpg"],
       details: "Supervised the Qualitative and Quantitative fieldwork in Ukhiya and Teknaf with both Host and Rohingya communities. Facilitated FGDs and KIIs."
     },
     {
@@ -89,7 +89,7 @@ export const cvData = {
       title: "Protecting Online Rights of Changemakers",
       date: "Jun - Jul 2024",
       location: "Bangladesh",
-      image: "/images/research/digitally-right.jpg", // Added image path
+      images: ["/images/research/digitally-right.jpg"],
       details: "Assessed the awareness of policies and regulations related to the digital domain among youth and women groups. Managed overall data collection and report preparation."
     },
     {
@@ -97,7 +97,7 @@ export const cvData = {
       title: "Women's Economic Empowerment and Equality Study",
       date: "Jun - Sep 2024",
       location: "Dhaka & Bandarban",
-      image: "/images/research/mjf-women.jpg", // Added image path
+      images: ["/images/research/mjf-women.jpg"],
       details: "Conducted Qualitative Data Collection in Dhaka and Bandarban. Managed the Quantitative data collection in Dhaka. Designed the final report and oversaw publication."
     },
     {
@@ -105,7 +105,7 @@ export const cvData = {
       title: "Formative research to assess farmers KAP about occupational health",
       date: "May - Jun 2024",
       location: "Dinajpur & Jamalpur",
-      image: "/images/research/gain.jpg", // Added image path
+      images: ["/images/research/gain.jpg"],
       details: "Facilitated and checked the collection of qualitative data in Dinajpur and Jamalpur districts. Maintained contact with Upazila Agriculture Office."
     },
     {
@@ -113,7 +113,7 @@ export const cvData = {
       title: "Assessment on SBCC and Analysis on Nutrition Governance",
       date: "Apr - Jun 2024",
       location: "CHT Region",
-      image: "/images/research/mjf-nutrition.jpg", // Added image path
+      images: ["/images/research/mjf-nutrition.jpg"],
       details: "Fieldwork supervision and management in the three hill districts of Bandarban, Rangamati, and Khagrachari. Co-authored final reports."
     },
     {
@@ -121,7 +121,7 @@ export const cvData = {
       title: "Household Survey on Lifelong Learning and Skills Development",
       date: "Nov - Dec 2023",
       location: "Dhaka & Rajshahi",
-      image: "/images/research/ilo.jpg", // Added image path
+      images: ["/images/research/ilo.jpg"],
       details: "Oversaw the collection of quantitative data in Dhaka and Rajshahi. Cleaned quantitative data from over 6000 households."
     }
   ],

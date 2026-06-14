@@ -1,11 +1,12 @@
 // src/components/Highlights.tsx
 "use client";
 
-import { cvData } from '@/data/cv';
+import { useCvData } from '@/context/CvDataContext';
 import { motion } from 'framer-motion';
 import Typewriter from './Typewriter';
 
 export default function Highlights() {
+  const cvData = useCvData();
   return (
     <section id="highlights" className="py-24 md:py-32 bg-white relative overflow-hidden border-t border-stone-100">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full relative z-10">
