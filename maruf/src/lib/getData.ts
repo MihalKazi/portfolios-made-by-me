@@ -37,6 +37,7 @@ export type CvData = {
     year: string
   }[]
   academic: string[]
+  cvFileUrl?: string
 }
 
 export async function getCvData(): Promise<CvData> {

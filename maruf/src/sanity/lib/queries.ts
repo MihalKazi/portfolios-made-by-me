@@ -34,5 +34,6 @@ export const CV_QUERY = groq`*[_type == "cv"][0] {
     institution,
     year
   },
-  academic
+  academic,
+  "cvFileUrl": cvFile.asset->url
 }`

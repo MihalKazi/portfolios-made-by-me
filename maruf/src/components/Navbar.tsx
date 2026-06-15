@@ -3,8 +3,11 @@
 
 import { useState, useEffect } from 'react';
 import { motion, useScroll, useSpring, AnimatePresence } from 'framer-motion';
+import { useCvData } from '@/context/CvDataContext';
 
 export default function Navbar() {
+  const cvData = useCvData();
+  const cvUrl = '/api/download-cv';
   const [isOpen, setIsOpen] = useState(false);
 
   // Hook to track scroll progress (0 to 1)
@@ -61,15 +64,16 @@ export default function Navbar() {
 
           {/* Desktop Download CV Button (Hidden on Mobile) */}
           <a 
-            href="/Dewan_Maruf_Ahmed.pdf" 
-            download="Dewan_Maruf_Ahmed_CV.pdf"
+            href={cvUrl}
+            download
             className="hidden md:inline-flex border border-[#1E3A2F] text-[#1E3A2F] px-6 py-2.5 font-sans text-xs font-bold uppercase tracking-widest hover:bg-[#1E3A2F] hover:text-[#FDFBF7] transition-all duration-300 shadow-sm hover:shadow-md"
           >
             Download CV
           </a>
 
           {/* Hamburger Menu Button (Visible ONLY on Mobile) */}
-          <button 
+          <button
+            type="button"
             className="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5 focus:outline-none relative z-[90]"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle Menu"

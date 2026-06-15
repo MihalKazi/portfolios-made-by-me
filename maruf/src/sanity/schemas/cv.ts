@@ -112,5 +112,11 @@ export const cvSchema = defineType({
       type: 'array',
       of: [{ type: 'string' }],
     }),
+    defineField({
+      name: 'cvFile',
+      title: 'CV / Resume (PDF)',
+      type: 'file',
+      options: { accept: '.pdf' },
+    }),
   ],
 })
